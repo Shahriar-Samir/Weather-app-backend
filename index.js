@@ -10,8 +10,7 @@ app.use(cors())
 
 
 app.get('/',(req,res)=>{
-
-    res.send(req.ip)
+    res.send('Running')
 })
 
 app.get('/location', (req,res)=>{
