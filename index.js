@@ -9,8 +9,9 @@ app.use(express.json())
 app.use(cors())
 
 
-app.get('/',()=>{
-    res.send('Weather api is running')
+app.get('/',(req,res)=>{
+
+    res.send(req.ip)
 })
 
 app.get('/location', (req,res)=>{
